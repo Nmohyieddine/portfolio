@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { NavComponent } from '../nav/nav.component';
-import { MatAutocompleteModule, MatOption } from '@angular/material/autocomplete';
 import { map, Observable, startWith } from 'rxjs';
-import { AsyncPipe } from '@angular/common';
+import { NavComponent } from '../nav/nav.component';
 
 @Component({
   selector: 'app-header',
@@ -19,9 +18,7 @@ import { AsyncPipe } from '@angular/common';
     MatIconModule,
     NavComponent,
     MatAutocompleteModule,
-    MatOption,
     ReactiveFormsModule,
-    AsyncPipe,
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',

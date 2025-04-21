@@ -3,8 +3,8 @@
     <div class="icon-item">
       <button
         class="icon-item"
-        (click)="onIconClicked(item.name)"
-        [ngClass]="{ active: isIconClassActive(item.name) }"
+        (click)="onIconClicked(item)"
+        [ngClass]="{ active: isIconClassActive(item) }"
       >
         <mat-icon [matBadge]="item.badgeNumber" matBadgeColor="warn">{{ item.icon }}</mat-icon>
         <span>{{ item.label }}</span>
@@ -20,8 +20,4 @@
       <mat-icon>arrow_drop_down</mat-icon>
     </div>
   </div>
-
-  <div class="vertical-divider"></div>
-
-  <mat-divider vertical></mat-divider>
 </div>
